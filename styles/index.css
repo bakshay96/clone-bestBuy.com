@@ -1,0 +1,101 @@
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(45deg, #101f61, #2b4cb6 40%, #4171fc 59%, #7fd8ff 85%, #a6e4ff); */
+}
+
+#main-container {
+    width: 100%;
+    height: 713px;
+    background: linear-gradient(45deg, #101f61, #2b4cb6 40%, #4171fc 59%, #7fd8ff 85%, #a6e4ff);
+}
+
+#main-div {
+    width: 558px;
+    margin: auto;
+    padding-top: 100px;
+    line-height: 40px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+#heading {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#main-div>h1 {
+    color: #fff;
+    font-size: 59px;
+}
+
+#country-section {
+    width: 558px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#country-section a:first-child {
+    max-width: 31.5%;
+}
+
+#country-section a:last-child {
+    max-width: 28%;
+}
+
+#country-section>a {
+    background-color: transparent;
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    max-width: 30%;
+}
+
+.country-link>img {
+    width: 100%;
+}
+
+.country-link>img:hover {
+    border: 5px solid yellow;
+}
+
+.country-link h4 {
+    margin: 12px 0 0;
+    font-weight: 600;
+}
+
+#horizontal-line {
+    width: 558px;
+    height: 1px;
+    margin: 30px auto;
+    background: #4976e6;
+}
+
+#international-header {
+    width: 558px;
+    margin: auto;
+    margin-top: 16px;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #fff;
+}
+
+#info {
+    width: 558px;
+    margin: auto;
+    margin-top: 16px;
+    font-size: 16px;
+    margin-bottom: 0;
+    /* font-weight: 600; */
+    color: #fff;
+}

@@ -1,0 +1,143 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+    width: 100%;
+}
+
+
+/********************`` FIXED NAVBAR ********************/
+
+#top-nav {
+    background-color: #0046be;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.block {
+    padding: 15px 35px;
+}
+
+#menu-button {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-weight: 500;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#search {
+    width: 40%;
+    padding: 12px 10px;
+    border-radius: 7px;
+    border: none;
+    margin-left: 37px;
+}
+
+#top-nav-right {
+    display: flex;
+    margin-left: 28%;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#aiea {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-weight: 500;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    gap: 5px;
+    font-weight: 600;
+}
+
+#cart {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    gap: 5px;
+    font-weight: 600;
+}
+
+#cart:hover {
+    text-decoration: underline;
+}
+
+#horizontal-line {
+    width: 100%;
+    height: 2px;
+    margin-top: 77px;
+    background: #4976E6;
+}
+
+#down-nav {
+    background-color: #0046be;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 12px 35px;
+    gap: 190px;
+}
+
+#down-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#down-nav-left {
+    display: flex;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#down-nav-right {
+    display: flex;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#down-nav-left>a {
+    margin-right: 23px;
+}
+
+#down-nav-right>a {
+    margin-right: 30px;
+    font-weight: 500;
+}
+
+#down-nav-right>button {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    background: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    gap: 5px;
+    font-weight: 600;
+    margin-right: 27px;
+}
+
+#down-nav-left>a:hover {
+    text-decoration: underline;
+}
