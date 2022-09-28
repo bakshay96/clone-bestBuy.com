@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/signup.css">
+</head>
+<body>
+    <div class="signup-box">
+       
+        <form class="form" action="">
+            
+            <h1>Create an Account</h1>
+            <p class="para-1">Shopping for your business? <a href="#"> Create a business account.</a></p>
+            
+            <div class="input-group">
+                <input type="text" class="input" id="fname" >
+                <label  class="placeholder">First Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="input" id="lname">
+                <label  class="placeholder">Last Name</label>
+            </div>
+            <div class="input-group">
+                <input type="email" class="input" id="email">
+                <label  class="placeholder">Email Address</label>
+            </div>
+            <div class="input-group">
+                <input type="password" class="input" id="password">
+                <label  class="placeholder">Passwrod</label>
+            </div>
+             
+            <div class="input-group">
+                <input type="text" class="input" id="confirm-password">
+                <label  class="placeholder">Confirm password</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="input" id="username"">
+                <label  class="placeholder">User name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="input" id="mobile">
+                <label  class="placeholder">Mobile Phone Number</label>
+               
+                <div class="flex"> 
+                    <input type="checkbox">
+                    <span class="placeholder"><h5>Use for Account Recovery.</h5></span>
+                </div>
+            </div>
+            <div class="">
+                <input type="button" id="submit-btn" value="Create an Account" class="input" onclick="register()" >
+            
+            </div>
+            <p class="para-2">By continuing you agree to our
+                <a href="#">Terms and condition</a>our <a href="#"> Privacy Policy</a> ,and the <a href="#"> My Best Buy® Program Terms.</a>
+            </p>
+            <div class="line"></div>
+            <div class="flex">
+               <h4>Already have an account? <a href="./login.html">Sign in</a>  </h4>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
+<script src="./scripts/signup.js"></script>

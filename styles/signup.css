@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: #f6faf9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.singup-box{
+   padding: 0%;
+   background-color: aqua;
+   
+}
+.form{
+   margin-top: 50px;
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid rgb(25, 224, 224);
+    
+    box-shadow: 0px 0px 10px 0px #666;
+}
+.input-group
+{
+    position: relative;
+    margin-bottom: 20px;
+}
+.input{
+    padding: 10px;
+    width: 100%;
+    max-width:400px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #04AA6D;
+    border-radius: 2px solid white;
+
+}
+.placeholder{
+    font-weight: bold;
+    position:absolute;
+    top: 10px;
+    left: 8px;
+    font-size: 15px;
+    padding: 0px 5px;
+    color: rgb(8, 7, 7);
+    transition: 0.3s;
+    pointer-events: none;
+}
+.input:focus + .placeholder{
+    top: -10px;
+    color: #04AA6D;
+    background-color:#fff;
+}
+div{
+    margin-bottom: 10px;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 22px;
+}
+h4{
+text-align: center;
+text-align: justify;
+/* border: 2px solid black; */
+border-radius: 6px;
+font-size: 14px;
+margin:10px;
+padding:20px
+}
+p{
+text-align: center;
+padding-top: 20px;
+font-size:15px;
+}
+.para-2{
+    text-align: center;
+    
+    font-size: 13px;
+    margin-top: -10px;
+}
+.para-2 a{
+    color: #6854cc;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+.para-1 a{
+    color: #6854cc;
+   
+    font-size: 14px;
+}
+
+span>h5{
+margin-top: 40px;
+margin-left:10px;
+}
+.flex{
+margin-top:10px;
+}
+
+.line
+{
+width: auto;
+border: 0.1px solid #5ef4f4;
+}
+
+#submit-btn{
+    background-color:rgb(63, 63, 168);
+color:#fff;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bold;
+font-size: 15px;
+}
+#submit-btn:hover{
+    background-color:rgb(8, 8, 92);
+cursor: pointer;
+}
