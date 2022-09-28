@@ -1,0 +1,26 @@
+#gift{
+    display:flex;
+    border: 1px solid red;
+    width:70%;
+    margin:auto;
+}
+#gift > div {
+    border: 1px solid ;
+    text-align: center;
+} 
+#gift > img{
+     width:10%;
+}
+#blue{
+    width:100%;
+    height:200px;
+    border:1px solid ;
+    display:flex;
+    gap: 50px;
+}
+#blue > div{
+    border:1px solid red;
+    grid-template-columns:repeat(4,1fr);
+    background-color:#156bde;  
+    justify-content: space-between;
+}
