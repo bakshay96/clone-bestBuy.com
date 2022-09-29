@@ -12,10 +12,16 @@ body{
 .singup-box{
    padding: 0%;
    background-color: aqua;
+   position: relative;
+   margin-top: 50px;
    
 }
 .form{
-   margin-top: 50px;
+
+        position: fixed;
+        left: 35%;
+        right: 20%;
+        bottom: 10%;
     background-color: #fff;
     padding: 10px 20px;
     width: 100%;
@@ -40,6 +46,9 @@ body{
     border: 1px solid #04AA6D;
 
 }
+.input:focus{
+    border:2px solid #adffff;
+}
 .placeholder{
     font-weight: bold;
     position:absolute;
@@ -49,9 +58,14 @@ body{
     padding: 0px 5px;
     color: rgb(8, 7, 7);
     transition: 0.3s;
+    transition: top 300ms ease-in, left 300ms,font-size 300ms;
     pointer-events: none;
 }
-.input:focus + .placeholder{
+
+
+.input:focus + .placeholder,
+.input:not(:placeholder-shown).input:not(:focus) + .placeholder
+{   
     top: -10px;
     color: #04AA6D;
     background-color:#fff;

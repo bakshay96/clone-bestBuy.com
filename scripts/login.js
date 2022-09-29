@@ -1,5 +1,5 @@
 async function login(){
-
+    console.log("hello login function")
     //collect all all the data
    
     let login_data={
@@ -8,6 +8,11 @@ async function login(){
         password: document.getElementById('login_password').value,
 
     };
+    if(login_data.username=="" || login_data.password=="")
+    {
+        alert("filed not be empty")
+    }
+    console.log("logon")
    
     
    // base url-https://masai-api-mocker.herokuapp.com/
@@ -108,5 +113,5 @@ let saveUser =(username,token,time) =>{
 
 function moveBy()
 {
-    window.location.href="./home.html"
+    window.location.href="./index.html"
 }
