@@ -1,0 +1,126 @@
+.top-hedline-cotainer
+{
+    border: 1px solid rgb(90, 64, 155);
+  height:80px;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+.ol-list
+{
+    list-style: none;
+    display: flex;
+    gap:10px;
+    padding-left:180px;
+}
+.flex-block>a{
+    font-weight:bolder;
+    color: black;
+    font-size: 22px;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.divider{
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #9a9b9b;
+    display: inline-block; 
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color:rgb(250, 246, 241);
+}
+.main-div{
+    height: auto;
+    width: 100%;
+    padding: 0%;
+    margin:0%;
+    position: relative;
+}
+/* //category cotnainer */
+.category-container{
+    border: 1px solid red;
+    position: relative;
+    height: 400px;
+    display: block;
+    
+}
+
+.content-box{
+    max-width: 100%;
+    padding: 0%;
+    margin:0%;
+    height: auto;
+   box-sizing: initial;
+   text-align: center;
+}
+.VPT-title {
+    font-weight: 700;
+}
+.content-box .VPT-title {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: normal;
+    display: block;
+}
+.content-box-wrapper .content-box .VPT-body {
+    font-size: 15px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#show-data{
+    margin-top: 20px;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    position: absolute;
+   
+    border: 2px solid rgb(159, 101, 16);
+    
+  
+}
+.round-img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid rgb(165, 222, 235);
+    padding: 10px;
+}
+
+.item-div{
+    height:40vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    background-color: #fff;
+    text-align:center;
+    margin: 10px;
+    border: 1px solid grey;
+   
+
+}
+.item-div>p{
+    display: flex;
+    flex-direction: column;
+}
