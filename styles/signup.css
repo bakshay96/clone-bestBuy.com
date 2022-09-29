@@ -12,6 +12,7 @@ body{
 .singup-box{
    padding: 0%;
    background-color: aqua;
+   position: relative;
    
 }
 .form{
@@ -41,6 +42,9 @@ body{
     border-radius: 2px solid white;
 
 }
+.input:focus{
+    border:2px solid #adffff;
+}
 .placeholder{
     font-weight: bold;
     position:absolute;
@@ -52,7 +56,9 @@ body{
     transition: 0.3s;
     pointer-events: none;
 }
-.input:focus + .placeholder{
+.input:focus + .placeholder,
+.input:not(:placeholder-shown).input:not(:focus) + .placeholder
+{
     top: -10px;
     color: #04AA6D;
     background-color:#fff;
