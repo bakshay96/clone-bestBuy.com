@@ -27,6 +27,7 @@ let category_data=[
 
 
 
+
 function display(data)
 {
     let container=document.getElementById("show-data");
