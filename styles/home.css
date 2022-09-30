@@ -380,6 +380,8 @@ body {
 
 #con1-div1-right-down-right>div>a {
     text-decoration: none;
+    color: black;
+    font-weight: 500;
 }
 
 #con1-div1-right-down-right>div {
@@ -389,4 +391,73 @@ body {
 #con1-div1-right-down-right>div>a>span {
     color: white;
     background-color: red;
+    padding: 4px 6px;
+}
+
+#con1-div1-right-down-right>img {
+    width: 33%;
+    margin: 10px 0px 0px 130px;
+}
+
+#con1-div1-right-down-right>p {
+    line-height: 5px;
+    color: #0046be;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+#con1-div1-right-down-right>p:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/******************** FOOTER ********************/
+
+#footer {
+    width: 100%;
+    margin-top: 100px;
+    background-color: #F0F2F4;
+}
+
+#foot-top {
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    padding: 40px 40px 40px 40px;
+}
+
+.foot-top-div {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+.foot-top-div>a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0046BE;
+}
+
+.foot-top-div>a>div {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+    margin: auto;
+}
+
+.foot-top-div>a>p:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#footer-hr-1 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
 }
