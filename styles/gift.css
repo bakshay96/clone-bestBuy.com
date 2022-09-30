@@ -21,13 +21,16 @@
     display:flex;
     position: relative;
     margin:auto;
-    width:70%
+    width:85%
 }
 #gift > div {
-    hover:;
+    
     text-align: center;
-    width:70%
+    width:100%
 } 
+#gift :hover{
+    border:2px  solid rgb(102, 22, 22);
+}
 #gift  img{
      width:70%;
 }
@@ -130,4 +133,13 @@ picture img{
 }
 .abang img {
     width:100%    
+}
+#last{
+   margin-top: 70px;
+   border: solid 1px #55555a;
+}
+#slast{
+    margin-top: 50px;
+    margin-bottom: -70px;
+    border: solid 1px #55555a;
 }

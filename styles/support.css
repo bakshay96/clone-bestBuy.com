@@ -1,0 +1,51 @@
+.upper{
+    height:300px;
+    width:90%;
+    display:flex;
+    margin:auto;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.upper > div{
+     height: 100%;
+     width:30%;
+     border: 1px solid #e3e6eb;  
+}
+.upper img{
+    width:90%
+}
+.upper >div >p {
+    color:#6296dd;
+}
+.upper > div > p:hover{
+    color: #0046be;
+    text-decoration:underline;
+}
+#last {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
+    gap: 20px;
+    width: 90%;
+    margin:auto;
+}
+#last > div{
+    border: 1px solid #6296dd;
+    padding: 0px 20px;
+}
+#last > div > h5{
+    color:#6296dd;
+}
+#last > div > h5:hover{
+    color: #0046be;
+    text-decoration:underline;
+}
+
+#last > div > p{
+    color: #0046be;    
+}
+#middle img{
+   width :100%
+}
