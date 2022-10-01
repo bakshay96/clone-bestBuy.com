@@ -49,3 +49,27 @@
 #middle img{
    width :100%
 }
+.top{
+    position: relative;
+}
+.top img{
+    width:100%;
+}
+#button{
+    margin-top: 25px;
+    margin-left: 675px;
+    padding: 5px 10px 5px 10px;
+   
+}
+#button:hover{
+    background-color: #0046be;
+}
+ #hat h3{
+text-align: center;
+}
+.head{
+    margin-left: 65px;
+}
+#hat h3:hover{
+    color: #0046be;
+}
