@@ -62,38 +62,58 @@
             padding-left: 10px;
             padding-right: 20px;
         }
-        .ddd div {
+        #alldata {
           width: 100%;
           height: 250px;
           display: flex;
           border: 1px solid red;
           margin-top: 50px;
+          background-color: antiquewhite;
         }
-        .ddd img{
-          width: 30%;
-          height: 250px;
-          border: 1px solid red;
-        }
-        .ddd h5{
-            width: 50%;
-            font-size: 18px;
+        .ldiv,.mdiv,.rdiv{
+            border: 2px solid rgb(32, 224, 224);
+            width:28%;
             margin: auto;
-            margin-top: 20px;
-            color: blue;
-            margin-left: 20px;
-            border: 1px solid red;
+            height: 90%;
+            gap: 30px;
         }
-        .ddd h5+p{
-            position: absolute;
-            width:30%;
-            margin-top: 80px;
-            left: 400px;
-            border: 1px solid red;
+        .rdiv{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:start;
+            gap:5%;
         }
-        .ddd h1{
-            margin-top: 50px;
-            margin-right: 50px;
+        .rdiv #add-btn{
+            width:100px;
+            text-align: center;
+            background-color: yellow;
+            border-radius:7px;
+            padding: 5px;
+            padding-left: 10px;
         }
+        .mdiv p:nth-last-child(2){
+            color: rgb(45, 45, 232);
+            font-weight: 500;
+            text-align: left;
+
+        }
+        .mdiv p:nth-last-child(1){
+            color: rgb(1, 1, 20);
+            font-weight: 500;
+            text-align: left;
+            text-decoration: solid;
+            font-weight: bold;
+            padding: 5px;
+
+        }
+        .rdiv p{
+            text-align:justify;
+
+        }
+       
+       
+        
     </style>
 </head>
 <body>
@@ -188,6 +208,7 @@
         price: '$349.00',
         offer: 'Save $350',
         foffer: 'Was $1,149.99',
+        warrenty:"Free 6-month security software & 1 moreA $29.99 value",
         
         
     },
@@ -198,8 +219,21 @@
         price: '$349.00',
         offer: 'Save $350',
         foffer: 'Was $1,149.99',
+        warrenty:"Free 6-month security software & 1 moreA $29.99 value",
        
     },
+   
+    {
+        image:'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470349_sd.jpg;maxHeight=200;maxWidth=300',
+        name:'Acer - Acer-Chromebook 317 Laptop–17.3” HD IPS Touch Display–Intel Pentium Silver N6000 Processor–8GB LPDDR4X–64GB eMMC– WiFi6',
+        model:'Model: CB317-1HT-P5PFSKU: 6470349',
+        price: '$349.00',
+        offer: 'Save $350',
+        foffer: 'Was $1,149.99',
+        warrenty:"Free 6-month security software & 1 moreA $29.99 value"
+       
+    },
+   
 ]
     let products = document.querySelector('.ddd');
 
@@ -207,19 +241,42 @@
       products.innerHTML="";
       data.forEach(function (el){
        let alldata = document.createElement('div');
+       alldata.setAttribute("id","alldata")
+       let ldiv=document.createElement('div');
+       ldiv.setAttribute("class","ldiv")
+       let rdiv=document.createElement('div');
+       rdiv.setAttribute("class","rdiv")
+       let mdiv=document.createElement('div');
+       mdiv.setAttribute("class","mdiv")
+
        let img = document.createElement('img');
        img.src = el.image;
 
-       let name = document.createElement('h5');
+       let name = document.createElement('p');
       name.innerText = el.name;
+     
       let model = document.createElement('p');
       model.innerText = el.model;
       let price = document.createElement('h1');
       price.innerText = el.price;
-      let offer = document.createElement('button');
-      price.innerText = el.offer;
+      let offer = document.createElement('p');
+      offer.innerText = el.offer;
+      let foffer = document.createElement('div');
+      foffer.innerText = el.foffer;
+
+      let warrenty = document.createElement('p');
+      warrenty.innerText = el.warrenty;
+
+
+
+      let btn=document.createElement('div');
+      btn.innerHTML="Add to cart";
+      btn.setAttribute("id","add-btn")
       
-      alldata.append(img,name,model,price,offer)
+      ldiv.append(img);
+      mdiv.append(name,model)
+      rdiv.append(price,offer,foffer,warrenty, btn)
+      alldata.append(ldiv,mdiv,rdiv);
       products.append(alldata)
       })
     }

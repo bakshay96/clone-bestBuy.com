@@ -2,7 +2,14 @@
     margin-top: 0%;
     padding: 0%;
     height: auto;
+    position:static;
+    z-index:10;
 }
+
+#navbar{
+   z-index: 9;
+}
+
 
 #top-nav {
 background-color: #0046be;
@@ -15,7 +22,7 @@ left: 0%;
 right:0%;
 justify-content: space-between;
 
-overflow: visible;
+overflow:hidden;
 }
 
 .block {
