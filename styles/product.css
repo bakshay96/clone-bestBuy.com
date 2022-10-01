@@ -1,0 +1,178 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            background: rgb(255,255,255);
+        }
+        .main-carousel{
+    width: 100%;
+    margin-top: 50px;
+}
+.carousel-cell{
+    width: 20%;
+    height: 350px;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 8px;
+    /* border: 1px solid red; */
+}
+.carousel-cell img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+        .scroll-div{
+            width: 20%;
+            height: 1000px;
+            margin-top: 50px;
+            margin-left: 50px;
+            
+            overflow: hidden;
+            overflow-y:scroll;
+            position: relative;
+            /* border: 1px solid red; */
+        }
+        .wrapper{
+            width: 230px;
+            border: 1px solid gray; 
+            font-size: 20px;
+            padding: 20px;
+            
+        }
+        .wrapper h5{
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .swipe{
+            width: 70%;
+            height: 300px;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+        .gg{
+            width: 99%;
+    margin-top: 50px;  
+        }
+        .nnn{
+    margin-top: 50px;
+    width: 200px;
+    height: 210px;
+    margin: 0 10px;
+    overflow: hidden;
+    padding-left: 20px;
+    /* border-radius: 8px; */
+    text-align: center;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+   border: 1px solid transparent;
+   background-color: white;
+ position: absolute;
+}
+/* .nnn:hover{
+    border:1px solid blue;
+    border-radius: 8px;
+} */
+
+.nnn p {
+    margin-top: 10px;
+    color: blue;
+    background-color: white;
+    
+}
+.nnn img{
+    margin-top: 10px;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+        .product{
+            margin-top: 400px;
+            width: 70%;
+            height: auto;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+        .ddd div {
+          width: 100%;
+          height: 250px;
+          display: flex;
+          border-bottom: 1px solid gray;
+          
+          margin-top: 50px;
+        }
+        .ddd img{
+          width: 25%;
+          height: 200px;
+          /* border: 1px solid red; */
+        }
+        .ddd h5{
+            width: 50%;
+            font-size: 18px;
+            margin: auto;
+            margin-top: 20px;
+            color: blue;
+            margin-left: 20px;
+            /* border: 1px solid red; */
+        }
+        .ddd h5+p{
+            position: absolute;
+            width:30%;
+            margin-top: 80px;
+            left: 400px;
+            /* border: 1px solid red; */
+        }
+        .ddd h1{
+            margin-top: 50px;
+            margin-right: 50px;
+        }
+        .ddd h4{
+            position: absolute;
+            width: 10%;
+            height: 30px;
+            margin-top: 90px;
+            right: 150px;
+            border: none;
+            text-align: center;
+            padding-top: 5px;
+            background-color: brown;
+            color: white;
+        }
+        .ddd h4+p{
+            position: absolute;
+            width: 8%;
+            /* border: 1px solid red; */
+            height: 30px;
+            margin-top: 90px;
+            right: 40px;
+        }
+        .ddd button{
+            position: absolute;
+            width: 20%;
+            
+            margin-top: 180px;
+            right: 70px;
+            border: 1px solid transparent;
+            padding: 10px 10px 5px 20px;
+            font-size: 18px;
+            background-color: yellow;
+            border-radius: 3%;
+            
+        }
+        .sort{
+            text-align: end;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .sort select{
+            height: 30px;
+        }
+        
