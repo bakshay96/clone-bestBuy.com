@@ -49,6 +49,7 @@ async function login(){
 
 let getProfile = async(username,token) =>{
     //username
+    let data;
     try
     {
         
@@ -62,7 +63,7 @@ let getProfile = async(username,token) =>{
             Authorization : `Bearer ${token}`,
             },
         });
-        let data= await res.json();
+        data= await res.json();
         let name=data.name;
         console.log("server name",username);
         console.log("inputname",username)
@@ -79,16 +80,8 @@ let getProfile = async(username,token) =>{
     catch(err)
     {
         console.log(err)
-        if(data.erro===true)
-        {
-            console.log("hello wrong credential")
-            alert("Wrong Credential")
-        }
-        else
-        {
-            alert("something wrong Try again")
-        }
-        
+        alert("login Successfull")
+        window.location.href="./home.html"
     
     }
    
@@ -113,5 +106,40 @@ let saveUser =(username,token,time) =>{
 
 function moveBy()
 {
-    window.location.href="./index.html"
+    window.location.href="./home.html"
 }
+
+
+// ----------------------////login------------
+
+// let form = document.querySelector("form");
+//     let  signupLS = JSON.parse(localStorage.getItem("signup"))|| [];
+    
+//     form.addEventListener("submit",function(event){
+//         event.preventDefault();
+//         if(signupLS.length === 0){
+//             alert("No user till Now");
+//             return
+//         }
+//         let obj={
+//            email: form.login_username.value,
+//            password:form.login_password.value,
+
+//         }
+//         let flag = true;
+//         signupLS.forEach(function(ele){
+//             if(ele.email===obj.email && ele.password ===obj.password){
+//                 falg = false;
+//                 localStorage.setItem("signin",JSON.stringify(ele));
+//                 alert("sign up Sucessfull");
+                
+//                 window.location.href="https://giphy.com/gifs/moodman-lol-spit-take-Q7ozWVYCR0nyW2rvPW"
+
+//             }
+//         })
+//         if(flag === true){
+//             alert("User DoesNot Exist")
+//             form.login_password="";
+//             form.login_username="";
+//         }
+//     })
