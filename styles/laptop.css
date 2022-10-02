@@ -198,4 +198,32 @@
       .sort select {
         height: 30px;
       }
-    
+      .similar{
+        width: 95%;
+        height: 400px;
+        margin-left: 50px;
+        margin-top: 50px;
+        /* border: 1px solid red; */
+        position: absolute;
+        display: flex;
+        gap: 20px;
+      }
+      .sim{
+        width: 30%;
+        /* border: 1px solid red; */
+        text-align: center;
+      }
+      .sim img{
+        height: 50%;
+      }
+      .sim h3{
+        color: blue;
+        margin-top: 10px;
+      }
+      .sim h3~h3{
+        color: black;
+      }
+      .head{
+        margin-top: 150%;
+      }
+   
