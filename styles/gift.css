@@ -1,0 +1,151 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.center {
+    padding-right: 200px;
+}
+.ab{
+    position: relative;
+}
+.devi{
+    position: absolute;
+    top: 00px;
+    right: 00px;
+    padding-right: 100px;
+}
+.devi h1 {
+    color: #ddd;
+}
+#upper img{
+    width:100%;
+    height: 150px;
+}
+#gift{
+    display:flex;
+    position: relative;
+    margin:auto;
+    width:85%
+}
+#gift > div {
+    
+    text-align: center;
+    width:100%
+} 
+#gift :hover{
+    border:2px  solid rgb(102, 22, 22);
+}
+#gift  img{
+     width:70%;
+}
+#blue{
+    width:100%;
+    height:200px;
+    display:flex;
+    gap: 50px;
+}
+#blue > div{
+    width:100%;
+    grid-template-columns:repeat(4,1fr);
+    background-color:#156bde;  
+    justify-content: space-between;
+}
+#blue > div > h2 {
+    padding: 20px ;
+    text-align: center;
+}
+.center {
+    text-align: center;
+    color: #00197b;
+}
+.bang img{
+    width:100%
+}
+main{
+    width:100%;
+    height: 500px;
+    margin: 10px auto;
+    position:relative;
+    padding:5px 0;
+}
+
+main header{
+    width: 98%;
+    height:60px;
+    margin:0 auto;
+    align-items: center;
+    display: flex;
+    padding:20px;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+}
+header p span{
+    font-size: 40px;
+    margin:0 5px;
+    cursor: pointer;
+    color: rgb(207, 50, 50);
+    width:30px;
+    height:30px;
+    display:inline-block;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 3px;
+}
+header p span:hover{
+    background: #222;
+    color: white;
+}
+section{
+    width:98%;
+    height: 600px;
+    margin :auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+section::-webkit-scrollbar{
+    display: none;
+}
+section .product{
+    min-width: 24%;
+    height:90%;
+    background: whitesmoke;
+    margin: 0 20px 0 0 ;
+    border-radius: 20px;
+    position: relative;
+    left:0;
+    transition: 0.5s;
+}
+picture {
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    display:flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+picture img{
+    width :80%;
+}
+.bang img {
+    width:100%
+     
+}
+.abang{
+    margin-top: 200px;
+}
+.abang img {
+    width:100%    
+}
+#last{
+   margin-top: 70px;
+   border: solid 1px #55555a;
+}
+#slast{
+    margin-top: 50px;
+    margin-bottom: -70px;
+    border: solid 1px #55555a;
+}

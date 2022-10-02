@@ -12,16 +12,30 @@ body{
 .singup-box{
    padding: 0%;
    background-color: aqua;
-   position: relative;
-   margin-top: 50px;
+   position: absolute;
+   top:200px;
+   margin-top: 400px;
+   z-index: index 0;;
+  
    
 }
+.singup-box{
+    position: absolute;
+   padding: 0%;
+   background-color: aqua;
+   margin-top: 0%;
+   padding-top: 0%;
+   top: 200px;
+   z-index: 0;
+   scroll-behavior: smooth;
+   
+}
+
 .form{
 
-        position: fixed;
-        left: 35%;
-        right: 20%;
-        bottom: 10%;
+    position:relative;
+   
+   
     background-color: #fff;
     padding: 10px 20px;
     width: 100%;
@@ -31,7 +45,22 @@ body{
     border: 1px solid rgb(25, 224, 224);
     
     box-shadow: 0px 0px 10px 0px #666;
+   
 }
+.form{
+    position: relative;
+     top: 100px;
+     
+     background-color: #fff;
+     padding: 10px 20px;
+     width: 100%;
+     max-width: 400px;
+     box-sizing: border-box;
+     border-radius: 6px;
+     border: 1px solid rgb(25, 224, 224);
+     overflow: hidden;
+     box-shadow: 0px 0px 10px 0px #666;
+ }
 .input-group
 {
     position: relative;

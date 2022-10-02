@@ -1,0 +1,11 @@
+.ddd img {
+    width: 15%;
+    height: 200px;
+    /* border: 1px solid red; */
+  }
+  .ppp img {
+    margin-top:5px;
+    width: 70%;
+    height:150px;
+    object-fit: cover;
+  }
