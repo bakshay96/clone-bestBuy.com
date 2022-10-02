@@ -243,11 +243,17 @@ p {
     justify-content: space-between;
     position: absolute;
     padding-left: 120px;
-    border: none
+    border: none;
+    
 }
 
 #show-data div {
     background-color: #e2e4ea;
+    width: 90%;
+    margin: auto;
+}
+#show-data div:hover{
+    cursor: pointer;
 }
 
 .round-img {
@@ -259,7 +265,7 @@ p {
 }
 
 .item-div {
-    height: 30vh;
+    height: 40vh;
     justify-content: center;
     align-items: center;
     overflow: hidden;
