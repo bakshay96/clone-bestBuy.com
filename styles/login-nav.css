@@ -1,4 +1,4 @@
-.main-login{
+.main{
     margin-top: 0%;
     padding: 0%;
     height: auto;
@@ -6,12 +6,12 @@
     z-index:10;
 }
 
-#navbar-login{
+#navbar-auth{
+    position: absolute;
    z-index: 9;
 }
 
-
-.top-xnav {
+.nav-auth {
 background-color: #0046be;
 width: 100%;
 display: flex;
