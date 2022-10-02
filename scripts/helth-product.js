@@ -196,7 +196,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$285.00",
-        priceb:285.00
+        priceb:285.00,
         offer:"Save $10",
         foffer: "Was $279.00",
         id:"102",
