@@ -16,6 +16,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$259.00",
+        priceb:259.00,
         offer:"Save $19",
         foffer:"Was $100.00",
         Id:101,
@@ -30,6 +31,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$300.00",
+        priceb:300.00,
         offer:"Save $10",
         foffer:"Was $29.00",
         id:"102"
@@ -44,6 +46,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$350.00",
+        priceb:350.00,
         offer:"Save $10",
         foffer:"Was $279.00",
         id:"102"
@@ -58,6 +61,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$350.00",
+        priceb:350.00,
         offer:"Was $279.00",
         foffer:"Save $23",
         id:"102"
@@ -72,6 +76,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$199.00",
+        priceb:199.00,
         offer:"Save $32",
         foffer:"Was $279.00",
         id:"102"
@@ -86,6 +91,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$250.00",
+        priceb:250.00,
         offer:"Save $21",
         foffer:"Was $279.00",
         id:"102"
@@ -100,6 +106,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$366.00",
+        priceb:366.00,
         offer:"Save $23",
         foffer:"Was $279.00",
         id:"102"
@@ -114,6 +121,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$248.00",
+        priceb:248.00,
         offer:"Save $20",
         foffer:"Was $279.00",
         id:"102"
@@ -128,6 +136,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast  Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$246.00",
+        priceb:246.00,
         offer:"Save $10",
         foffer:"Was $279.00",
         id:"102"
@@ -142,6 +151,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$298.00",
+        priceb:298.00,
         offer:"Save $35",
         foffer:"Was $279.00",
         id:"102"
@@ -156,6 +166,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$297.00",
+        priceb:297.00,
         offer:"Save $10",
         foffer:"Was $279.00",
         id:"102"
@@ -170,6 +181,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$199.00",
+        priceb:199.00,
         offer:"Save $20",
         foffer:"Save $20 Was $279.00",
         id:"102",
@@ -184,6 +196,7 @@ let data = [
         pickup:"Pickup: Available today at Aiea  Act Fast – Only 2 left at your store! See all pickup locations",
         shipping:"Shipping: Unavailable in your area This item is only available in certain markets.Estimates for 96939",
         price:"$285.00",
+        priceb:285.00
         offer:"Save $10",
         foffer: "Was $279.00",
         id:"102",
@@ -295,71 +308,109 @@ let data = [
    
 // },
 // ]
-let products = document.querySelector('.ddd');
 
-function displayproduct(data)
-{
-  products.innerHTML="";
-  data.forEach(function (el){
-   let alldata = document.createElement('div');
-   let img = document.createElement('img');
-   img.className="set-img";
-   img.src = el.image;
+let products = document.querySelector(".ddd");
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+function displayproduct(data) {
+  products.innerHTML = "";
+  data.forEach(function (el,i) {
+    let alldata = document.createElement("div");
+    let img = document.createElement("img");
+    img.src = el.image;
 
-   let name = document.createElement('h5');
-  name.innerText = el.name;
-  let model = document.createElement('p');
-  model.innerText = el.model;
-  let price = document.createElement('h1');
-  price.innerText = el.price;
-  let offer = document.createElement('h4');
-  offer.innerText = el.offer;
-  let foffer = document.createElement('p');
-  foffer.innerText = el.foffer;
-  let buttonCart = document.createElement('button');
-  buttonCart.innerHTML = '  <i class="fa-solid fa-cart-shopping"></i> Add to Cart';
-  
-  alldata.append(img,name,model,price,offer,foffer,buttonCart)
-  products.append(alldata)
-  })
+    let name = document.createElement("h5");
+    name.innerText = el.name;
+    let model = document.createElement("p");
+    model.innerText = el.model;
+    let price = document.createElement("h1");
+    price.innerText = el.price;
+    let priceb = document.createElement("h1");
+    price.innerText = el.priceb;
+    let offer = document.createElement("h4");
+    offer.innerText = el.offer;
+    let foffer = document.createElement("p");
+    foffer.innerText = el.foffer;
+    let buttonCart = document.createElement("button");
+    buttonCart.addEventListener("click",function()
+    {
+      addItem(el);
+    })
+    buttonCart.innerHTML =
+      '  <i class="fa-solid fa-cart-shopping"></i> Add to Cart';
+      buttonCart.onclick=()=>{
+      // addTocart(el)
+    } 
+
+    alldata.append(img, name, model, price, offer, foffer, buttonCart);
+    products.append(alldata);
+  });
 }
 displayproduct(data);
+
+let addTocart=(data)=>{
+console.log(cart)
+alert("Product Added")
+cart.push(data);
+localStorage.setItem("products",JSON.stringify(cart))
+}
+
+
+
+
 let filter = document.getElementById("filter");
 
-filter.addEventListener("change",function(){
-if(filter.value === "position"){
+filter.addEventListener("change", function () {
+  if (filter.value === "position") {
     displayproduct(data);
     window.location.reload(true);
-}else if (filter.value === "NewArrival"){
-    let filtered = data.filter(function(element){
-        return element.nwearrival===1;
-    })
+  } else if (filter.value === "NewArrival") {
+    let filtered = data.filter(function (element) {
+      return element.nwearrival === 1;
+    });
     displayproduct(filtered);
-}else if (filter.value === "LowToHigh"){
-   let priceLH = data.sort(function(a,b){
-        if(a.price > b.price) return 1
-        if(a.price < b.price) return -1
-        return 0
-    })
+  } else if (filter.value === "LowToHigh") {
+    let priceLH = data.sort(function (a, b) {
+      if (a.priceb > b.priceb) return 1;
+      if (a.priceb < b.priceb) return -1;
+      return 0;
+    });
     displayproduct(priceLH);
-}else if (filter.value === "HighToLow"){
-    let priceHL = data.sort(function(a,b){
-         if(a.price > b.price) return -1
-         if(a.price < b.price) return 1
-         return 0
-     })
-     displayproduct(priceHL);
- }else if (filter.value === "Name"){
-    let nameP = data.sort(function(a,b){
-         if(a.name > b.name) return 1
-         if(a.name < b.name) return -1
-         return 0
-     })
-     displayproduct(nameP);
- }
-})
+  } else if (filter.value === "HighToLow") {
+    let priceHL = data.sort(function (a, b) {
+      if (a.priceb > b.priceb) return -1;
+      if (a.priceb < b.priceb) return 1;
+      return 0;
+    });
+    displayproduct(priceHL);
+  } else if (filter.value === "Name") {
+    let nameP = data.sort(function (a, b) {
+      if (a.name > b.name) return 1;
+      if (a.name < b.name) return -1;
+      return 0;
+    });
+    displayproduct(nameP);
+  }
+});
 
- 
-  console.log("length of data",data.length)
-  let total=data.length;
-  document.getElementById("total").innerText=`Total Items:${total}`;
+
+let cartLs=JSON.parse(localStorage.getItem("cart"))||[];
+function addItem(product)
+{
+  let isCartAdded=false;
+  for(let i=0;i<cartLs.length;i++)
+  {
+    if(cartLs[i].name==products.name)
+    {
+      alert("Product already in the cart");
+      isCartAdded=true;
+      break;
+    }
+  }
+  if(isCartAdded==false)
+  {
+    cartLs.push(product);
+    alert("poduct added sucessfully..!");
+    localStorage.setItem("cart",JSON.stringify(cartLs));
+  }
+}
+

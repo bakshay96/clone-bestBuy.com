@@ -130,10 +130,14 @@
       let foffer = document.createElement("p");
       foffer.innerText = el.foffer;
       let buttonCart = document.createElement("button");
+      buttonCart.addEventListener("click",function()
+      {
+        addItem(el);
+      })
       buttonCart.innerHTML =
         '  <i class="fa-solid fa-cart-shopping"></i> Add to Cart';
         buttonCart.onclick=()=>{
-        addTocart(el)
+        // addTocart(el)
       } 
 
       alldata.append(img, name, model, price, offer, foffer, buttonCart);
@@ -186,4 +190,26 @@ localStorage.setItem("products",JSON.stringify(cart))
       displayproduct(nameP);
     }
   });
+
+
+  let cartLs=JSON.parse(localStorage.getItem("cart"))||[];
+  function addItem(product)
+  {
+    let isCartAdded=false;
+    for(let i=0;i<cartLs.length;i++)
+    {
+      if(cartLs[i].name==products.name)
+      {
+        alert("Product already in the cart");
+        isCartAdded=true;
+        break;
+      }
+    }
+    if(isCartAdded==false)
+    {
+      cartLs.push(product);
+      alert("poduct added sucessfully..!");
+      localStorage.setItem("cart",JSON.stringify(cartLs));
+    }
+  }
 
