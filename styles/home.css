@@ -678,5 +678,5 @@ body {
 .con6-div1-div>span:hover {
     color: #01235e;
     text-decoration: underline;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
