@@ -44,14 +44,14 @@ let title = document.createElement("h3");
 title.innerText=el.name;
 let price = document.createElement("p");
 price.innerText=el.price;
-Subtotal+=Number(el.price)
-// console.log(typeof(Subtotal))
+Subtotal+=Number(el.priceb)
+ console.log(Subtotal)
 div.append(img,title,price);
 container.append(div);
 })
 
 // console.log(Subtotal)
 let subtotal = document.getElementById("subtotal")
-subtotal.innerText=`Rs. ${Subtotal.toFixed(2)}`;
+subtotal.innerText=`$. ${Subtotal}`;
 localStorage.setItem("subtotal",JSON.stringify(Subtotal))
 
