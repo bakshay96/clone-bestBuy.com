@@ -1,3 +1,16 @@
+/*********** IMPORT NAVBAR ***********/
+
+import { navbar } from "../components/navbar.js";
+
+let navbar_div = document.getElementById('navbar');
+navbar_div.innerHTML = navbar();
+
+/*********** IMPORT FOOTER ***********/
+
+import { footer } from "../components/footer.js";
+
+let footer_div = document.getElementById('footer');
+footer_div.innerHTML = footer();
 
 //     let cart = JSON.parse(localStorage.getItem('cart'));
 //     let container = document.getElementById("cart-product");
@@ -33,51 +46,47 @@ let product = document.getElementById("cart-product");
 let Subtotal = 0;
 //get the items from local storage
 let container = document.getElementById("cart-product");
-let cart= JSON.parse( localStorage.getItem("cart"))||[];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 console.log(cart);
 
-function display(cart)
-{
-    container.innerHTML=null;
-    cart.forEach((el,index)=>{
-    let div = document.createElement("div");
-    div.setAttribute("class","product");
-    let img = document.createElement("img");
-    img.src=el.image;
-    let title = document.createElement("h3");
-    title.innerText=el.name;
-    let price = document.createElement("p");
-    price.innerText=el.price;
-    let removeItem=document.createElement("button");
-    removeItem.innerText="Remove Item"
-    removeItem.addEventListener("click",function()
-    {
-        deleteItem(el);
-    })
+function display(cart) {
+    container.innerHTML = null;
+    cart.forEach((el, index) => {
+        let div = document.createElement("div");
+        div.setAttribute("class", "product");
+        let img = document.createElement("img");
+        img.src = el.image;
+        let title = document.createElement("h3");
+        title.innerText = el.name;
+        let price = document.createElement("p");
+        price.innerText = el.price;
+        let removeItem = document.createElement("button");
+        removeItem.innerText = "Remove Item"
+        removeItem.addEventListener("click", function() {
+            deleteItem(el);
+        })
 
-    Subtotal+=Number(el.priceb)
-    console.log(Subtotal)
-    div.append(img,title,price,removeItem);
-    container.append(div);
+        Subtotal += Number(el.priceb)
+        console.log(Subtotal)
+        div.append(img, title, price, removeItem);
+        container.append(div);
     })
 
     // console.log(Subtotal)
     let subtotal = document.getElementById("subtotal")
-    subtotal.innerText=`$. ${Subtotal}`;
-    localStorage.setItem("subtotal",JSON.stringify(Subtotal))
+    subtotal.innerText = `$. ${Subtotal}`;
+    localStorage.setItem("subtotal", JSON.stringify(Subtotal))
 }
 display(cart);
 
-function deleteItem(index)
-{
-    let deleteData=cart.filter(function(e,i)
-    {
-        return e!=index;
+function deleteItem(index) {
+    let deleteData = cart.filter(function(e, i) {
+        return e != index;
     });
 
-    localStorage.setItem("cart",JSON.stringify(deleteData))
-    cart= JSON.parse( localStorage.getItem("cart"))||[];
+    localStorage.setItem("cart", JSON.stringify(deleteData))
+    cart = JSON.parse(localStorage.getItem("cart")) || [];
     display(cart);
-    
+
 }

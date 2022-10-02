@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/cart.css">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <!--------------- GOOGLE FONT --------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--------------- FONTAWSOME LINK --------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
 </head>
+
 <body>
+    <div id="navbar">
+
+    </div>
     <div id="cart-container">
         <h1>Bag</h1>
         <span id="quntity" style="    font-size: 20px;">PRODUCT</span><span id="total" style="    font-size: 20px;">TOTAL</span>
         <div id="cart-product">
-            
+
         </div>
     </div>
     <hr style="    margin-top: 2%;
     margin-bottom: 2%;">
     <div id="subtotalDiv">
-        <div >
+        <div>
 
             <h1>Subtotal</h1>
             <h3 id="subtotal" style="    margin:auto;
@@ -33,9 +46,12 @@
             <button class="checkoutbtn" id="updatecart">Update Cart</button>
         </div>
     </div>
-    <span  id="message"></span>
-</body>
-</html>
-<script src="./scripts/cart.js">
+    <span id="message"></span>
+    <div id="footer">
 
+    </div>
+</body>
+
+</html>
+<script type="module" src="./scripts/cart.js">
 </script>

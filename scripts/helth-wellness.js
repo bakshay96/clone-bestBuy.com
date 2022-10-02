@@ -56,3 +56,7 @@ function display(data) {
 }
 
 display(category_data);
+
+document.querySelector(".banner-img").addEventListener('click', function() {
+    window.location.href = "../helth-product.html"
+});

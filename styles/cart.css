@@ -1,30 +1,29 @@
-
-        body
-{
-    margin: 0;
-    padding: 0;
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-#cart-container{
-    width: 70%;;
+
+#cart-container {
+    width: 70%;
+    ;
     height: auto;
     margin-top: 28px;
     position: relative;
     /* border: 1px solid red; */
     top: 20px;
     left: 20px;
-   
 }
 
-
-#cart-container>h1{
+#cart-container>h1 {
     text-align: center;
     margin-bottom: 60px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #3C3C3C;
-    
 }
 
-.checkoutbtn{
+.checkoutbtn {
     width: 70%;
     height: 59px;
     margin: auto;
@@ -35,11 +34,12 @@
     font-size: 20px;
     margin-top: 10px;
 }
-.checkoutbtn:hover{
+
+.checkoutbtn:hover {
     background-color: #807e7e;
 }
 
-#cart-container div div{
+#cart-container div div {
     margin-top: 18px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
@@ -48,37 +48,44 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+#quntity {
+    color: #3C3C3C;
+    margin-left: 50%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
 
-#quntity{
-    
-    color: #3C3C3C; margin-left: 50%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bolder;
+#total {
+    margin-left: 28%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    color: #3C3C3C;
 }
-#total{
-    
-    margin-left: 28%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bolder; color: #3C3C3C;
-}
-.product>img{
+
+.product>img {
     width: 200px;
     height: 150px;
     padding: 5px;
     /* border: 1px solid red; */
 }
-.product h3{
+
+.product h3 {
     width: 30%;
     font-size: 18px;
 }
-.product{
+
+.product {
     display: flex;
     justify-content: space-around;
 }
-#subtotalDiv{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  /* border: 1px solid red; */
-  width: 25%;
-  height: 500px;
-  margin: auto;
-  text-align: center;
+
+#subtotalDiv {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* border: 1px solid red; */
+    width: 25%;
+    height: 500px;
+    margin: auto;
+    text-align: center;
 }
-    
