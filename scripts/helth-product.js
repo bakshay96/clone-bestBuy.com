@@ -287,16 +287,7 @@ let data = [
 //     foffer: 'Was $799.99',
    
 // },
-// {
-//     image:'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6508/6508652_sd.jpg;maxHeight=200;maxWidth=300',
-//     name:'Dell - Inspiron 3515 15.6" Non-Touch Laptop - AMD Ryzen 5 - 8GB Memory - 256GB Solid State Drive - Carbon Black',
-//     model:'Model: i3515-A706BLK-PUS SKU: 6508652',
-//     price: '$379.99',
-//     priceb: 379.99,
-//     offer: 'Save $170',
-//     foffer: 'Was $549.99',
-   
-// },
+
 // {
 //     image:'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6503/6503846_sd.jpg;maxHeight=200;maxWidth=300',
 //     name:'HP OMEN - 16.1" QHD Laptop - Intel Core i7-12700H - 16GB Memory - NVIDIA GeForce RTX 3060 - 1TB SSD - Shadow Black',
