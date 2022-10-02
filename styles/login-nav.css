@@ -2,20 +2,28 @@
     margin-top: 0%;
     padding: 0%;
     height: auto;
+    position:static;
+    z-index:10;
 }
 
-#top-nav {
-    background-color: #0046be;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0%;
-    right: 0%;
-    justify-content: space-between;
-    z-index: 100;
-    overflow: visible;
+
+#navbar-auth{
+    position: absolute;
+   z-index: 9;
+}
+
+.nav-auth {
+background-color: #0046be;
+width: 100%;
+display: flex;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0%;
+right:0%;
+justify-content: space-between;
+z-index: 10;
+overflow:hidden;
 }
 
 .block {

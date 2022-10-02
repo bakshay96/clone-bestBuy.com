@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Best Buy | Official Online Store | Shop Now &amp; Save</title>
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="icon" href="https://www.bestbuy.com/~assets/bby/_com/header-footer/images/favicon-32.png" sizes="32x32">
     <link rel="stylesheet" href="./styles/helth-wellness.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <!--------------- GOOGLE FONT --------------->
@@ -209,7 +211,7 @@
             <div class="banner-3-right">
                 <div class="right-sub rd1"><img alt="Cell phones and smart devices" class="img-responsive" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/SOL-94745-lively-flex_pol-0f1dce0d-9a5c-4e13-9b57-2b94f690496b.jpg;maxHeight=130;maxWidth=192"></div>
                 <div class="right-sub rd2]">
-                    <dir><a href="/site/brands/lively/pcmcat341800050001.c?id=pcmcat341800050001" data-track="[context:widgetType=polaroid,linkContent=health-and-fitness_SOL88457_HH_Lively_11162021,linkRegion=Shop all health and wellness &amp; All Wearable Technology,linkPlacement=c2w1]">Lively™ helps you stay connected, safe and healthy.</a></dir>
+                    <div><a href="/site/brands/lively/pcmcat341800050001.c?id=pcmcat341800050001" data-track="[context:widgetType=polaroid,linkContent=health-and-fitness_SOL88457_HH_Lively_11162021,linkRegion=Shop all health and wellness &amp; All Wearable Technology,linkPlacement=c2w1]">Lively™ helps you stay connected, safe and healthy.</a></div>
                     <div>
                         <p>Lively, formerly GreatCall, makes it easy for you to stay active, mobile and independent with easy-to-use cell phones and responsive medical alert devices. Have questions or need help shopping? Call Lively at 1-800-650-4930 (7
                             a.m.–8 p.m. CT).</p>
@@ -222,6 +224,7 @@
 
 
     </div>
+    <div id="footer"></div>
 
 
 
@@ -229,3 +232,9 @@
 
 </html>
 <script type="module" src="./scripts/helth-wellness.js"></script>
+<script type="module">
+    import { footer } from "../components/footer.js";
+
+   let footer_div = document.getElementById('footer');
+   footer_div.innerHTML = footer();
+</script>

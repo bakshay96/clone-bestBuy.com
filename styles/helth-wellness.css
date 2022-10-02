@@ -243,11 +243,17 @@ p {
     justify-content: space-between;
     position: absolute;
     padding-left: 120px;
-    border: none
+    border: none;
+    
 }
 
 #show-data div {
     background-color: #e2e4ea;
+    width: 90%;
+    margin: auto;
+}
+#show-data div:hover{
+    cursor: pointer;
 }
 
 .round-img {
@@ -259,7 +265,7 @@ p {
 }
 
 .item-div {
-    height: 30vh;
+    height: 40vh;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -372,7 +378,7 @@ p {
     gap: 50px;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 250px;
     background-color: #e2e4ea;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -401,6 +407,12 @@ p {
     width: 140px;
     height: 40px;
     border-radius: 10px;
+}
+#shop-now:hover{
+   font-size: 20px;
+   font-weight: bolder;
+    color: #ec0b0b;
+    cursor: pointer;
 }
 
 .banner-left-p {
@@ -450,8 +462,9 @@ p {
 
 .left-sub,
 .right-sub {
-    margin-left: 20px;
-    padding-top: 20px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-right:10px;
     align-items: top;
     width: 50%;
     /* border: 1px solid blue; */
