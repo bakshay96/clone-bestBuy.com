@@ -343,6 +343,7 @@ console.log(cart)
 alert("Product Added")
 cart.push(data);
 localStorage.setItem("products",JSON.stringify(cart))
+
 }
 
 
