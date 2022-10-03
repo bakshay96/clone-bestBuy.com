@@ -41,6 +41,7 @@ function display(data) {
     data.forEach(function(el) {
         let div = document.createElement("div");
         div.className = "item-div"
+        div.id="div"
 
         let img = document.createElement("img");
         img.src = el.img;
@@ -56,3 +57,9 @@ function display(data) {
 }
 
 display(category_data);
+
+let move = document.getElementById("div");
+move.addEventListener("click",function()
+{
+    window.location.href="./helth-product.html";
+})

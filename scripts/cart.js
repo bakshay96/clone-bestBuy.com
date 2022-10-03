@@ -79,5 +79,6 @@ function deleteItem(index)
     localStorage.setItem("cart",JSON.stringify(deleteData))
     cart= JSON.parse( localStorage.getItem("cart"))||[];
     display(cart);
+    window.location. reload();
     
 }
