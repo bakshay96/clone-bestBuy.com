@@ -16,7 +16,7 @@ const navbar = () => {
         <a href="#">Totaltech Membership</a>
         <a href="#">Credit Cards</a>
         <a href="#">Gift Cards</a>
-        <a href="#">Gift Ideas</a>
+        <a href="gift.html">Gift Ideas</a>
         <a href="./helth-wellness.html">Health & Wellness</a>
         <a href="./laptop.html">More</a>
     </div>
